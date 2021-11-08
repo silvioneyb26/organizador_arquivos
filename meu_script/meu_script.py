@@ -38,6 +38,7 @@ def git_add(nome):
 nome_pasta = input("""Bem vindo!
 Por favor, informe o nome da pasta a ser salva: """)
 caminho = os.path.join('/', 'workspace', 'organizador_arquivos')
+#caminho = os.getcwd()
 criar_pasta(caminho, nome_pasta)
 mn = 0
 while mn == 0:      
