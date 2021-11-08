@@ -29,8 +29,7 @@ def git_add(nome):
     os.system('git commit -m {}'.format(commit))
     os.system('git push')
     
-    return 'Parabéns! Sua pasta foi enviada com sucesso'
-                 
+    return 'Parabéns! Sua pasta foi enviada com sucesso'               
                
 
 
