@@ -27,20 +27,18 @@ def git_add(nome):
     os.system('git add {}'.format(nome))
     commit = str(input('Deixe um comentário: '))
     os.system('git commit -m {}'.format(commit))
-    os.system('git push')
-    
-    return 'Parabéns! Sua pasta foi enviada com sucesso'               
+    os.system('git push') 
+                
                
 
 
 
 nome_pasta = input("""Bem vindo!
 Por favor, informe o nome da pasta a ser salva: """)
-caminho = os.path.join('/', 'workspace', 'organizador_arquivos')
-#caminho = os.getcwd()
+caminho = os.getcwd()
 criar_pasta(caminho, nome_pasta)
 mn = 0
-while mn == 0:      
+while mn == 0:     
      
     print('\n Vamos salvar a pasta no github? 1.sim ou 2.nao:')   
     op = input("Qual é a opcão desejada? ")
@@ -49,4 +47,10 @@ while mn == 0:
     #selecionar opções
     if (op == "1"):       
       print(git_add(nome_pasta))
-    mn += 1
+      mn += 1
+    elif (op == "1"):
+        print("Tudo bem! A pasta {} foi está salva em seud diretório".format(nome_pasta)) 
+   
+    
+    
+    
